@@ -22,4 +22,8 @@ public class Customer {
         this.firstname = firstname;
         this.email = email;
     }
+
+    public Integer toplama(int a, int b){
+        return a+b+1;
+    }
 }
