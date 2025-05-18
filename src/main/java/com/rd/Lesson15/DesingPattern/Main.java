@@ -2,7 +2,7 @@ package com.rd.Lesson15.DesingPattern;
 
 public class Main {
     public static void main(String[] args) {
-      Bilgisayar bilgisayar = Bilgisayar.BilgisayarBuilder.aBilgisayar()
+        Bilgisayar bilgisayar = Bilgisayar.BilgisayarBuilder.aBilgisayar()
                 .withMarka("Casper")
                 .withIslemci("İntel")
                 .withRam(16)
@@ -12,22 +12,19 @@ public class Main {
         System.out.println(bilgisayar);
 
 
-        Bilgisayar bigisayar3 = Bilgisayar.BilgisayarBuilder.aBilgisayar()
-                .withMarka("Dell")
+        Bilgisayar3 bilgisayar3 = Bilgisayar3.Bilgisayar3Builder.aBilgisayar3()
                 .withIslemci("Intel")
-                .withDepolama(500)
-                .withRam(512)
-                .build();
-
-        System.out.println(bigisayar3.toString());
-
-/*
-        Bilgisayar2 bilgisayar2 = Bilgisayar2.Bilgisayar2Builder.aBilgisayar2()
-                .withIslemci("AMD")
+                .withRam(256)
                 .withDepolama(1000)
-                .withRam(32)
+                .withMarka("Dell")
                 .build();
 
-        System.out.println(bilgisayar2.toString()); */
+        System.out.println(bilgisayar3);
+
+        String text = bilgisayar3.toString();
+
+        System.out.println(text);
+
+
     }
 }

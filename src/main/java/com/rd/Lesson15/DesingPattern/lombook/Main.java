@@ -4,33 +4,22 @@ import com.rd.Lesson15.DesingPattern.lombook.Bilgisayar;
 
 public class Main {
     public static void main(String[] args) {
-  /*      Bilgisayar bilgisayar = Bilgisayar.builder()
-                .marka("Casper")
-                .islemci("İntel")
-                .ram(16)
-                .depolama(500)
+
+        Bilgisayar5.IsletimSistemi isletimSistemi = Bilgisayar5.IsletimSistemi.builder()
+                .architecture("MacOs")
                 .build();
 
+       Bilgisayar5 bilgisayar5 = Bilgisayar5.builder()
+               .islemci("Intel")
+               .isletimSistemi(isletimSistemi)
+               .ram(256)
+               .depolama(1000)
+               .marka("Apple")
+               .build();
 
-        System.out.println(bilgisayar); */
-
-        Bilgisayar3 bilgisayar3 = Bilgisayar3.builder()
-                .islemci("AMD")
-                .ram(16)
-                .depolama(1000)
-                .build();
-
-        System.out.println(bilgisayar3.toString());
+        System.out.println(bilgisayar5.getIsletimSistemi().getArchitecture());
 
 
-        Bilgisayar bilgisayar = Bilgisayar.builder()
-                .marka("Apple")
-                .depolama(500)
-                .islemci("M3")
-                .ram(512)
-                .build();
-
-        System.out.println(bilgisayar);
     }
 
 
